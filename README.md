@@ -1,6 +1,10 @@
 
 Welcome to MyAI Cookbook
 
+
+```bash
+git clone git@github.com:azhao1981/myai-cookbook.git
+```
 ## uv
 ```bash
 uv venv .myai-cookbook
@@ -11,10 +15,12 @@ https://github.com/astral-sh/uv
 
 ```powershell
 Remove-Item Env:\CONDA_PREFIX
-# uv.toml 不生效？
+# uv.toml 不生效？ 的 ucloud和生效，用了国内源，哈哈
 uv pip install jupyterlab -i "https://pypi.tuna.tsinghua.edu.cn/simple"
 uv pip install python-dotenv -i "https://pypi.tuna.tsinghua.edu.cn/simple"
 uv pip install ipywidgets -i "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+jupyter lab .
 ```
 
 https://jupyter.org/install
