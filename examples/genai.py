@@ -15,3 +15,9 @@ model = genai.GenerativeModel(version)
 
 model_info = genai.get_model(version)
 print(f'{version} - input limit: {model_info.input_token_limit}, output limit: {model_info.output_token_limit}')
+
+
+prompt = "What is artificial intelligence?"
+model.count_tokens(prompt)
+response = model.generate_content(prompt)
+print(response.text)
